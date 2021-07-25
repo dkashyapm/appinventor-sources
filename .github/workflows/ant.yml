@@ -38,3 +38,6 @@ jobs:
         with:
           name: MIT AI2 Companion
           path: appinventor/build/buildserver/MIT AI2 Companion.apk
+      - name: 'Run local Server'
+        run: java_dev_appserver --address=0.0.0.0 --port=1000 appengine/build/war/
+        working-directory: appinventor
